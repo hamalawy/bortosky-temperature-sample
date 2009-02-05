@@ -38,6 +38,10 @@ namespace Bortosky.Samples.Temperature.Data {
         {
             return this.Max.GetHashCode() + this.Min.GetHashCode();
         }
+        public override string ToString()
+        {
+            return string.Format("Maximum: {0}, Minimum {1}", this.Max, this.Min);
+        }
 
 	}//end TemperatureRange
 

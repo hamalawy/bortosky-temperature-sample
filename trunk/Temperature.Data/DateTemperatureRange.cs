@@ -38,6 +38,10 @@ namespace Bortosky.Samples.Temperature.Data {
         {
             return this.Range.GetHashCode() + this.RangeDateTime.GetHashCode();
         }
+        public override string ToString()
+        {
+            return string.Format("{0:d} {1}", this.RangeDateTime, this.Range);
+        }
 
 	}//end DateTemperatureRange
 
