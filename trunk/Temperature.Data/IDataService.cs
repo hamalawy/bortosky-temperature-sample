@@ -24,7 +24,7 @@ namespace Bortosky.Samples.Temperature.Data {
 		/// <param name="days">The days after the start date to return.  The date of the
 		/// last DateTemperatureRange returned will be <= the start date plus this value.
 		/// </param>
-		List<DateTemperatureRange> GetTemperaturesByDate(DateTime date, int days);
+		List<DateTemperatureRange> GetTemperaturesByDate(string stationId, DateTime date, int days);
 
 		/// <summary>
 		/// Returns a DateTemperatureRange for each day of the requested month
@@ -33,7 +33,7 @@ namespace Bortosky.Samples.Temperature.Data {
 		/// requested</param>
 		/// <param name="month">The month in the given year whose temperature ranges are
 		/// requested</param>
-		List<DateTemperatureRange> GetTemperaturesByMonth(int year, int month);
+		List<DateTemperatureRange> GetTemperaturesByMonth(string stationId, int year, int month);
 	}//end IDataService
 
 }//end namespace Data
