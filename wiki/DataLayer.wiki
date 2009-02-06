@@ -1,0 +1,14 @@
+#summary Goals and features of the Data Layer
+#labels Phase-Design
+
+= Introduction =
+
+The data layer of the Temperature sample gets its data from an XML file downloaded from the National Weather Data Center.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
