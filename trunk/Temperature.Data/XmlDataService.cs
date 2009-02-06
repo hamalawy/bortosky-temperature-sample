@@ -11,6 +11,8 @@
 
 using System.Collections.Generic;
 using System;
+using System.IO;
+using System.Reflection;
 using Bortosky.Samples.Temperature.Data;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -26,7 +28,7 @@ namespace Bortosky.Samples.Temperature.Data {
 		/// </summary>
         public XmlDataService()
         {
-            this.temperatureData = XDocument.Load(@"c:\temps.xml");
+            this.temperatureData = XDocument.Load(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "temps.xml"));
         }
 
 		/// 
