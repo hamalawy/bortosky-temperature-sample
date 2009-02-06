@@ -5,7 +5,7 @@
 
 The data layer of the Temperature sample gets its data from an XML file downloaded from the [http://cdo.ncdc.noaa.gov/ National Climatic Data Center].
 
-The XML file contains daily temperatures for the Lambert St. Louis International Airport for every day from January 1, 1999 through December 31, 2008. The NCDC does not supply a validating schema or use a namespace and I just used the file as is (see NCDCXmlFormat). I created an interface (*IDataService*) to specify the behavior of the data layer, namely
+The XML file contains daily temperatures for the Lambert St. Louis International Airport for every day from January 1, 1999 through December 31, 2008. The NCDC does not supply a validating schema or use a namespace and I just used the file as is (see [NCDCXmlFormat]). I created an interface (*IDataService*) to specify the behavior of the data layer, namely
 
   * Get temperatures for a general, specified period of days
   * Get temperatures for a specified month
