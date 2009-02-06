@@ -1,0 +1,61 @@
+#summary NCDC XML format.
+#labels Phase-Design
+
+{{{
+<ROOTDOC>
+   ...
+   <DBROW num="196">
+      <YEARMODA>19990715</YEARMODA>
+      <TEMP>  79.7</TEMP>
+      <TEMP_CNT>24</TEMP_CNT>
+      <DEWP>  65.1</DEWP>
+      <DEWP_CNT>24</DEWP_CNT>
+      <SLP>1017.0</SLP>
+      <SLP_CNT>24</SLP_CNT>
+      <STP> 997.6</STP>
+      <STP_CNT>4</STP_CNT>
+      <VIS>  8.9</VIS>
+      <VIS_CNT>24</VIS_CNT>
+      <WDSP>  9.1</WDSP>
+      <WDSP_CNT>24</WDSP_CNT>
+      <MXSPD> 12.0</MXSPD>
+      <GUST> 18.1</GUST>
+      <MAXTEMP>  89.1</MAXTEMP>
+      <MAXFLAG>*</MAXFLAG>
+      <MINTEMP>  70.0</MINTEMP>
+      <MINFLAG>*</MINFLAG>
+      <PRCP> 0.00</PRCP>
+      <PRCPFLAG>I</PRCPFLAG>
+      <SNDP>999.9</SNDP>
+      <FRSHTT>000000</FRSHTT>
+      <STATION_ID>72434013994</STATION_ID>
+   </DBROW>
+   <DBROW num="197">
+      <YEARMODA>19990716</YEARMODA>
+      <TEMP>  83.6</TEMP>
+      <TEMP_CNT>24</TEMP_CNT>
+      <DEWP>  69.8</DEWP>
+      <DEWP_CNT>24</DEWP_CNT>
+      <SLP>1017.0</SLP>
+      <SLP_CNT>24</SLP_CNT>
+      <STP> 997.9</STP>
+      <STP_CNT>4</STP_CNT>
+      <VIS>  8.9</VIS>
+      <VIS_CNT>24</VIS_CNT>
+      <WDSP>  9.5</WDSP>
+      <WDSP_CNT>24</WDSP_CNT>
+      <MXSPD> 15.0</MXSPD>
+      <GUST> 19.0</GUST>
+      <MAXTEMP>  93.0</MAXTEMP>
+      <MAXFLAG>*</MAXFLAG>
+      <MINTEMP>  75.0</MINTEMP>
+      <MINFLAG>*</MINFLAG>
+      <PRCP> 0.00</PRCP>
+      <PRCPFLAG>I</PRCPFLAG>
+      <SNDP>999.9</SNDP>
+      <FRSHTT>000000</FRSHTT>
+      <STATION_ID>72434013994</STATION_ID>
+   </DBROW>
+   ...
+</ROOTDOC>
+}}}
