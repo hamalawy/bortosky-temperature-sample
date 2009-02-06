@@ -3,12 +3,15 @@
 
 = Introduction =
 
-The data layer of the Temperature sample gets its data from an XML file downloaded from the National Weather Data Center.
+The data layer of the Temperature sample gets its data from an XML file downloaded from the [http://cdo.ncdc.noaa.gov/ National Climatic Data Center].
 
+The XML file contains daily temperatures for the Lambert St. Louis International Airport for every day from January 1, 1999 through December 31, 2008. The NCDC does not supply a validating schema or use a namespace and I just used the file as is. I created an interface (*IDataService*) to specify the behavior of the data layer, namely
 
-= Details =
+  * Get temperatures for a general, specified period of days
+  * Get temperatures for a specified month
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Implementation =
+
+A specific implementation in *XmlDataService* uses the Linq to XML to read the requested temperatures from the NCDC file. The implementation of the month call simply calls the general days method after computing the proper number of days. (wathing out for the fencepost problem!). Both method implementations return List<DateTemperatureRange>.
+
+An alternative to Linq To XML was XSLT querying of the data but I wanted to show Linq To XML instead of that older technology.
