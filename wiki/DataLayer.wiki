@@ -9,6 +9,63 @@ The XML file contains daily temperatures for the Lambert St. Louis International
 
   * Get temperatures for a general, specified period of days
   * Get temperatures for a specified month
+{{{
+<ROOTDOC>
+   <DBROW num="1">
+      <YEARMODA>19990101</YEARMODA>
+      <TEMP>  13.5</TEMP>
+      <TEMP_CNT>24</TEMP_CNT>
+      <DEWP>   9.0</DEWP>
+      <DEWP_CNT>24</DEWP_CNT>
+      <SLP>1027.5</SLP>
+      <SLP_CNT>24</SLP_CNT>
+      <STP>1005.1</STP>
+      <STP_CNT>23</STP_CNT>
+      <VIS>  6.9</VIS>
+      <VIS_CNT>24</VIS_CNT>
+      <WDSP>  6.9</WDSP>
+      <WDSP_CNT>24</WDSP_CNT>
+      <MXSPD> 15.9</MXSPD>
+      <GUST>999.9</GUST>
+      <MAXTEMP>  17.6</MAXTEMP>
+      <MAXFLAG>*</MAXFLAG>
+      <MINTEMP>   9.0</MINTEMP>
+      <MINFLAG>*</MINFLAG>
+      <PRCP>99.99</PRCP>
+      <PRCPFLAG> </PRCPFLAG>
+      <SNDP>  1.2</SNDP>
+      <FRSHTT>101000</FRSHTT>
+      <STATION_ID>72434013994</STATION_ID>
+   </DBROW>
+   <DBROW num="2">
+      <YEARMODA>19990102</YEARMODA>
+      <TEMP>  21.5</TEMP>
+      <TEMP_CNT>24</TEMP_CNT>
+      <DEWP>  20.2</DEWP>
+      <DEWP_CNT>24</DEWP_CNT>
+      <SLP>1010.7</SLP>
+      <SLP_CNT>24</SLP_CNT>
+      <STP> 988.9</STP>
+      <STP_CNT>24</STP_CNT>
+      <VIS>  2.5</VIS>
+      <VIS_CNT>24</VIS_CNT>
+      <WDSP> 11.8</WDSP>
+      <WDSP_CNT>24</WDSP_CNT>
+      <MXSPD> 19.0</MXSPD>
+      <GUST> 27.0</GUST>
+      <MAXTEMP>  28.9</MAXTEMP>
+      <MAXFLAG>*</MAXFLAG>
+      <MINTEMP>  17.1</MINTEMP>
+      <MINFLAG>*</MINFLAG>
+      <PRCP> 1.00</PRCP>
+      <PRCPFLAG>G</PRCPFLAG>
+      <SNDP>  7.1</SNDP>
+      <FRSHTT>111000</FRSHTT>
+      <STATION_ID>72434013994</STATION_ID>
+   </DBROW>
+   ...
+</ROOTDOC>
+}}}
 
 = Implementation =
 
