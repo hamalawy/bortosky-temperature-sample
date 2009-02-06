@@ -33,11 +33,11 @@ namespace Bortosky.Samples.Temperature.DataService
         /// <param name="days">The days after the start date to return.  The date of the
         /// last DateTemperatureRange returned will be <= the start date plus this value.
         /// </param>
-        public List<DateTemperatures> GetTemperaturesByDate(int year, int month, int day, int days)
+        public List<DateTemperatures> GetTemperaturesByDate(string stationId, int year, int month, int day, int days)
         {
             IDataService s = new XmlDataService();
             List<DateTemperatures> ldt = new List<DateTemperatures>();
-            foreach (DateTemperatureRange r in s.GetTemperaturesByDate(new DateTime(year, month, day), days))
+            foreach (DateTemperatureRange r in s.GetTemperaturesByDate(stationId, new DateTime(year, month, day), days))
             {
                 ldt.Add(new DateTemperatures() { SubjectDate = r.RangeDateTime.ToString("R"), TempRange = new TemperatureRange() { Maximum = r.Range.Max, Minimum = r.Range.Min } });
             }
@@ -51,11 +51,11 @@ namespace Bortosky.Samples.Temperature.DataService
         /// requested</param>
         /// <param name="month">The month in the given year whose temperature ranges are
         /// requested</param>
-        public List<DateTemperatures> GetTemperaturesByMonth(int year, int month)
+        public List<DateTemperatures> GetTemperaturesByMonth(string stationId, int year, int month)
         {
             IDataService s = new XmlDataService();
             List<DateTemperatures> ldt = new List<DateTemperatures>();
-            foreach (DateTemperatureRange r in s.GetTemperaturesByMonth(year, month))
+            foreach (DateTemperatureRange r in s.GetTemperaturesByMonth(stationId, year, month))
             {
                 ldt.Add(new DateTemperatures() { SubjectDate = r.RangeDateTime.ToString("R"), TempRange = new TemperatureRange() { Maximum = r.Range.Max, Minimum = r.Range.Min } });
             }
