@@ -1,0 +1,11 @@
+#summary Goals and features of the Service Layer
+
+#labels Phase-Design
+=Overview=
+The Temperature Service Layer is composed of two packages.
+  * A Data Layer interface and implementation using Linq to XML
+  * A Web layer exposing the temperature data from the Data Layer from a different domain, through SOAP
+==Data Layer==
+Coming soon
+==Service Layer
+Coming soon
