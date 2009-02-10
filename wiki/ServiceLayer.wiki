@@ -11,9 +11,9 @@ Using the *contract-first* pattern, an XSD schema was used to generate the types
 Contract-first helps ensure interopability with other non .NET clients, for example, an [http://www.w3.org/TR/NOTE-datetime ISO 8601] format (as a standard xs:string) is used for the temperature date instead of a System.DateTime.
 Note that the System.DateTime is serialized in a proper interopable manner by the ASP.NET web service framework but the ISO format was used for demonstration purposes.
 *Linq to XML* and a *generic collection* are used to read the requested temperatures from the XML file and return a composite response object to the calling program, in this case, the Service Layer.
-===ITemperatureReader===
-To keep the Service Layer lean and clean, ITemperatureReader specifies only a single operation, a general-purpose, low-level _GetTemperaturesByDate_ method.
-Clients, such as this reference application, can compose methods over this one, such as GetTemperaturesByMonth, which computes appropriate argument values for GetTemperaturesByDate.
+====ITemperatureReader====
+To keep the Service Layer lean and clean, ITemperatureReader specifies only a single operation, a general-purpose, low-level GetTemperaturesByDate method.
+Callers, such as this reference application, can compose methods over this one, such as GetTemperaturesByMonth, which computes appropriate argument values for GetTemperaturesByDate.
 Of course the XMLTemperatureReader is only a reference implementation of the ITemperatureReader interface. Other implementations might be a SqlServerTemperatureReader or OracleTemperatureReader.
 ==Web Layer==
 The Web Layer simply provides a *web service* front-end to the underlying data layer described above.
