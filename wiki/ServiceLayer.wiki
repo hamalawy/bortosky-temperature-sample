@@ -1,5 +1,4 @@
-#summary Goals and features of the Service Layer
-
+#summary Overview and features of the Service Layer
 #labels Phase-Design
 =Overview=
 The Temperature Service Layer is composed of two packages.
@@ -7,5 +6,5 @@ The Temperature Service Layer is composed of two packages.
   * A Web layer exposing the temperature data from the Data Layer from a different domain, through SOAP
 ==Data Layer==
 Coming soon
-==Service Layer
+==Service Layer==
 Coming soon
