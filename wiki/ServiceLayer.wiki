@@ -3,10 +3,21 @@
 =Overview=
 The Temperature Service Layer is composed of two packages.
   * A Data Layer interface and implementation using Linq to XML
-  * A Web layer exposing the temperature data from the Data Layer from a different domain, through SOAP
+  * A Web layer exposing the temperature data from the Data Layer on a different domain, through SOAP
 ==Data Layer==
 The National Climatic Data Service provides a [http://cdo.ncdc.noaa.gov/CDO/wmores40.jsp?page=http://www7.ncdc.noaa.gov/CDO/cdoselect.cmd?datasetabbv=GSOD%26countryabbv=%26georegionabbv= web interface] to download climate data in various formats.
 An [NCDCXmlFormat XML file] of daily high and low temperatures for Lambert-St. Louis International Airport for an arbitrary period provides the data for the sample application.
-Using the contract-first pattern, an XSD schema was used to generate the types used by the Service Layer and the types were generated using the xsd.exe tool.
-==Service Layer==
-Coming soon
+Using the *contract-first* pattern, an XSD schema was used to generate the types used by the Service Layer and the types were generated using the *xsd.exe* tool.
+Contract-first helps ensure interopability with other non .NET clients, for example, an [http://www.w3.org/TR/NOTE-datetime ISO 8601] format (as a standard xs:string) is used for the temperature date instead of a System.DateTime.
+Note that the System.DateTime is serialized in a proper interopable manner by the ASP.NET web service framework but the ISO format was used for demonstration purposes.
+*Linq to XML* and a *generic collection* are used to read the requested temperatures from the XML file and return a composite response object to the calling program, in this case, the Service Layer.
+===ITemperatureReader===
+To keep the Service Layer lean and clean, ITemperatureReader specifies only a single operation, a general-purpose, low-level _GetTemperaturesByDate_ method.
+Clients, such as this reference application, can compose methods over this one, such as GetTemperaturesByMonth, which computes appropriate argument values for GetTemperaturesByDate.
+Of course the XMLTemperatureReader is only a reference implementation of the ITemperatureReader interface. Other implementations might be a SqlServerTemperatureReader or OracleTemperatureReader.
+==Web Layer==
+The Web Layer simply provides a *web service* front-end to the underlying data layer described above.
+The service is available at http://sns.tzo.com/bortoskyservices/TemperatureService.asmx.
+The XSD schema specifying the composite Response type is available at http://sns.tzo.com/bortoskyservices/TemperatureContract.xsd.
+Note that the schema designer was removed from Visual Studio 2008 for some reason.
+Many other schema editors are available but this simple one was composed manually in notepad.
