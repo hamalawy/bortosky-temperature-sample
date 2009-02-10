@@ -5,6 +5,8 @@ The Temperature Service Layer is composed of two packages.
   * A Data Layer interface and implementation using Linq to XML
   * A Web layer exposing the temperature data from the Data Layer from a different domain, through SOAP
 ==Data Layer==
-Coming soon
+The National Climatic Data Service provides a [http://cdo.ncdc.noaa.gov/CDO/wmores40.jsp?page=http://www7.ncdc.noaa.gov/CDO/cdoselect.cmd?datasetabbv=GSOD%26countryabbv=%26georegionabbv= web interface] to download climate data in various formats.
+An [NCDCXmlFormat XML file] of daily high and low temperatures for Lambert-St. Louis International Airport for an arbitrary period provides the data for the sample application.
+Using the contract-first pattern, an XSD schema was used to generate the types used by the Service Layer and the types were generated using the xsd.exe tool.
 ==Service Layer==
 Coming soon
