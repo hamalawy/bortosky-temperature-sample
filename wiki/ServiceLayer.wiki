@@ -18,6 +18,7 @@ Of course the XMLTemperatureReader is only a reference implementation of the ITe
 ==Web Layer==
 The Web Layer simply provides a *web service* front-end to the underlying data layer described above.
 The service is available at http://sns.tzo.com/bortoskyservices/TemperatureService.asmx.
+As mentioned above, the service also exposes a second method, GetTemperaturesByMonth which simply computes appropriate argument values for the TemperatureReader's GetTemperaturesByDate method.
 The XSD schema specifying the composite Response type is available at http://sns.tzo.com/bortoskyservices/TemperatureContract.xsd.
-Note that the schema designer was removed from Visual Studio 2008 for some reason.
-Many other schema editors are available but this simple one was composed manually in notepad.
+Note that the graphical schema designer was removed from Visual Studio 2008 for some reason.
+Many other schema editors are available but this simple one was composed manually in the VS 2008 text-based editor.
