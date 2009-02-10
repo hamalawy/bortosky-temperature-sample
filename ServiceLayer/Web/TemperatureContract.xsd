@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="http://bortosky.com/temperature" elementFormDefault="qualified"
+	xmlns="http://bortosky.com/temperature" xmlns:mstns="http://bortosky.com/temperature"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TemperatureRangeType">
+    <xs:sequence>
+      <xs:element name="Maximum" type="xs:float" maxOccurs="1" minOccurs="1" />
+      <xs:element name="Minimum" type="xs:float" maxOccurs="1" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DateRangeType">
+    <xs:sequence>
+      <xs:element name="RangeDate" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>ISO 8601</xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Range" type="TemperatureRangeType" maxOccurs="1" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TemperatureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DateRange" type="DateRangeType" maxOccurs="unbounded" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
