@@ -32,5 +32,10 @@ namespace Bortosky.Samples.Temperature.DataService.ServiceLayer
             return this.GetTemperaturesByDay(StationID, Year, Month, 1, new DateTime(Year, Month, 1).AddMonths(1).AddDays(-1).Day);
         }
 
+        [WebMethod]
+        public AvailableDatesResponse GetAvailableDates(string StationID)
+        {
+            return new XmlTemperatureReader().GetAvailableDates(StationID);
+        }
     }
 }
