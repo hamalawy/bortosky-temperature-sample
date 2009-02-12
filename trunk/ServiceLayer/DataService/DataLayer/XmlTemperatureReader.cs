@@ -44,14 +44,25 @@ namespace Bortosky.Samples.Temperature.DataService.DataLayer {
                 orderby (string)item.Element("YEARMODA")
                 select new DateRangeType()
                 {
-                    RangeDate = this.DateParser(item).ToString("s"),
+                    RangeDate = this.DateParser(item).ToString("yyyy-MM-dd"),
                     Range = new TemperatureRangeType()
                     {
                         Minimum = float.Parse(item.Element("MINTEMP").Value),
                         Maximum = float.Parse(item.Element("MAXTEMP").Value)
                     }
                 };
+            // clean out 9999.9 values from NCDS weather file. Replace such values with the prior day's values.
             r.DateRange = query.ToArray<DateRangeType>();
+            float min = 0, max = 0;
+            foreach (DateRangeType dr in r.DateRange)
+            {
+                if (dr.Range.Minimum < -20 || dr.Range.Minimum > 120)
+                    dr.Range.Minimum = min;
+                if (dr.Range.Maximum < -20 || dr.Range.Maximum > 120)
+                    dr.Range.Maximum = max;
+                max = dr.Range.Maximum;
+                min = dr.Range.Minimum;
+            }
             return r;
         }
 
