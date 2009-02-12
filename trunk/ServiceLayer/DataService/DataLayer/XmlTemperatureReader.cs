@@ -17,21 +17,23 @@ using System.Xml.Linq;
 using Bortosky.Samples.Temperature.DataService.DataLayer;
 
 namespace Bortosky.Samples.Temperature.DataService.DataLayer {
-	public class XmlTemperatureReader : ITemperatureReader {
+    public class XmlTemperatureReader : ITemperatureReader
+    {
         private XDocument temperatureData;
-		public XmlTemperatureReader(){
+        public XmlTemperatureReader()
+        {
             this.temperatureData = XDocument.Load(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase), "temps.xml"));
-		}
+        }
 
-		/// 
-		/// <param name="stationId">The station identifer from the National Climatic Data
-		/// Center</param>
-		/// <param name="year"></param>
-		/// <param name="month"></param>
-		/// <param name="day"></param>
-		/// <param name="days">The days to return, note you may receive less than this
-		/// number if data is missing from the source. The last date returned will be this
-		/// many days past the specified start date</param>
+        /// 
+        /// <param name="stationId">The station identifer from the National Climatic Data
+        /// Center</param>
+        /// <param name="year"></param>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <param name="days">The days to return, note you may receive less than this
+        /// number if data is missing from the source. The last date returned will be this
+        /// many days past the specified start date</param>
         public TemperatureResponse GetTemperaturesByDate(string stationId, int year, int month, int day, int days)
         {
             DateTime date = new DateTime(year, month, day);
@@ -42,7 +44,7 @@ namespace Bortosky.Samples.Temperature.DataService.DataLayer {
                 orderby (string)item.Element("YEARMODA")
                 select new DateRangeType()
                 {
-                    RangeDate = new System.DateTime(int.Parse(item.Element("YEARMODA").Value.Substring(0, 4)), int.Parse(item.Element("YEARMODA").Value.Substring(4, 2)), int.Parse(item.Element("YEARMODA").Value.Substring(6, 2))).ToString("s"),
+                    RangeDate = this.DateParser(item).ToString("s"),
                     Range = new TemperatureRangeType()
                     {
                         Minimum = float.Parse(item.Element("MINTEMP").Value),
@@ -53,6 +55,31 @@ namespace Bortosky.Samples.Temperature.DataService.DataLayer {
             return r;
         }
 
-	}//end XmlTemperatureReader
+        public AvailableDatesResponse GetAvailableDates(string stationId)
+        {
+            Func<XElement, Boolean> stationTest = e => e.Element("STATION_ID").Value.CompareTo(stationId).Equals(0);
+            IEnumerable<XElement> elements = this.temperatureData.Root.Descendants("DBROW");
+            XElement fx = elements.FirstOrDefault(stationTest);
+            if (fx == null)
+                throw new ArgumentException(string.Format("Station ID '{0}' was not found", stationId));
+            else
+            {
+                XElement lx = elements.LastOrDefault(stationTest);
+                DateTime fd = DateParser(fx);
+                DateTime ld = DateParser(lx);
+                return new AvailableDatesResponse() { AvailableDates = new AvailableDatesType() { FirstDate = fd.ToString("s"), DaysAvailable = (ld - fd).Days } };
+            }
+        }
+
+        private DateTime DateParser(string ncdsDate)
+        {
+            return new System.DateTime(int.Parse(ncdsDate.Substring(0, 4)), int.Parse(ncdsDate.Substring(4, 2)), int.Parse(ncdsDate.Substring(6, 2)));
+        }
+        private DateTime DateParser(XElement dbrow)
+        {
+            return DateParser(dbrow.Element("YEARMODA").Value);
+        }
+        
+    }//end XmlTemperatureReader
 
 }//end namespace DataLayer
