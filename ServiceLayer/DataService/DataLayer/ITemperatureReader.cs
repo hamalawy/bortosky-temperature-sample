@@ -28,6 +28,10 @@ namespace Bortosky.Samples.Temperature.DataService.DataLayer {
 		/// number if data is missing from the source. The last date returned will be this
 		/// many days past the specified start date</param>
 		TemperatureResponse GetTemperaturesByDate(string stationId, int year, int month, int day, int days);
+
+		/// 
+		/// <param name="string"></param>
+		AvailableDatesResponse GetAvailableDates(string stationId);
 	}//end ITemperatureReader
 
 }//end namespace DataLayer

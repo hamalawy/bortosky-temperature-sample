@@ -103,4 +103,59 @@ namespace Bortosky.Samples.Temperature.DataService.DataLayer {
             }
         }
     }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.1432")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bortosky.com/temperature")]
+    public partial class AvailableDatesType {
+        
+        private string firstDateField;
+        
+        private int daysAvailableField;
+        
+        /// <remarks/>
+        public string FirstDate {
+            get {
+                return this.firstDateField;
+            }
+            set {
+                this.firstDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int DaysAvailable {
+            get {
+                return this.daysAvailableField;
+            }
+            set {
+                this.daysAvailableField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.1432")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://bortosky.com/temperature")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://bortosky.com/temperature", IsNullable=false)]
+    public partial class AvailableDatesResponse {
+        
+        private AvailableDatesType availableDatesField;
+        
+        /// <remarks/>
+        public AvailableDatesType AvailableDates {
+            get {
+                return this.availableDatesField;
+            }
+            set {
+                this.availableDatesField = value;
+            }
+        }
+    }
 }
