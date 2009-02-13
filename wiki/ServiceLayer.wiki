@@ -11,9 +11,15 @@ Using the *contract-first* pattern, an XSD schema was used to generate the types
 Contract-first helps ensure interopability with other non .NET clients, for example, an [http://www.w3.org/TR/NOTE-datetime ISO 8601] format (as a standard xs:string) is used for the temperature date instead of a System.DateTime.
 Note that the System.DateTime is serialized in a proper interopable manner by the ASP.NET web service framework but the ISO format was used for demonstration purposes.
 *Linq to XML* and a *generic collection* are used to read the requested temperatures from the XML file and return a composite response object to the calling program, in this case, the Service Layer.
+
+The NCDC seems to be returning temperatures of 9999.9 in certain circumstances, probably because of unreported data. 
+For purposes of demonstration, these temperatures are adjusted to the prior day's values.
+This adjustment is done at this lowest level Data Layer so downstream clients won't have to deal with the bad data.
 ====ITemperatureReader====
-To keep the Service Layer lean and clean, ITemperatureReader specifies only a single operation, a general-purpose, low-level GetTemperaturesByDate method.
+To keep the Service Layer lean and clean, ITemperatureReader specifies a general-purpose, low-level GetTemperaturesByDate method.
 Callers, such as this reference application, can compose methods over this one, such as GetTemperaturesByMonth, which computes appropriate argument values for GetTemperaturesByDate.
+Another method specified by the interface to one to retrieve the limits of the data available, i.e., the first date for which a temperature range is available.
+The XMLTemperatureReader uses the *lambda expression* predicate capabilities of the *Linq to XML* framework types to provide a concise and fast implementation for this method.
 Of course the XMLTemperatureReader is only a reference implementation of the ITemperatureReader interface. Other implementations might be a SqlServerTemperatureReader or OracleTemperatureReader.
 ==Web Layer==
 The Web Layer simply provides a *web service* front-end to the underlying data layer described above.
