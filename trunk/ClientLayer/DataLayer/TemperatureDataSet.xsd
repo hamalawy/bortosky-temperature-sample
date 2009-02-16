@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TemperatureDataSet" targetNamespace="http://tempuri.org/TemperatureDataSet.xsd" xmlns:mstns="http://tempuri.org/TemperatureDataSet.xsd" xmlns="http://tempuri.org/TemperatureDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="NotPublic" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TemperatureDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="TemperatureDataSet" msprop:Generator_UserDSName="TemperatureDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TemperatureTable" msprop:Generator_UserTableName="TemperatureTable" msprop:Generator_RowDeletedName="TemperatureTableRowDeleted" msprop:Generator_TableClassName="TemperatureTableDataTable" msprop:Generator_RowChangedName="TemperatureTableRowChanged" msprop:Generator_RowClassName="TemperatureTableRow" msprop:Generator_RowChangingName="TemperatureTableRowChanging" msprop:Generator_RowEvArgName="TemperatureTableRowChangeEvent" msprop:Generator_RowEvHandlerName="TemperatureTableRowChangeEventHandler" msprop:Generator_TablePropName="TemperatureTable" msprop:Generator_TableVarName="tableTemperatureTable" msprop:Generator_RowDeletingName="TemperatureTableRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TempDate" msdata:Caption="Date" msprop:Generator_UserColumnName="TempDate" msprop:Generator_ColumnPropNameInRow="TempDate" msprop:Generator_ColumnVarNameInTable="columnTempDate" msprop:Generator_ColumnPropNameInTable="TempDateColumn" type="xs:dateTime" />
+              <xs:element name="Maximum" msprop:Generator_UserColumnName="Maximum" msprop:Generator_ColumnPropNameInRow="Maximum" msprop:Generator_ColumnVarNameInTable="columnMaximum" msprop:Generator_ColumnPropNameInTable="MaximumColumn" type="xs:float" />
+              <xs:element name="Minimum" msprop:Generator_UserColumnName="Minimum" msprop:Generator_ColumnPropNameInRow="Minimum" msprop:Generator_ColumnVarNameInTable="columnMinimum" msprop:Generator_ColumnPropNameInTable="MinimumColumn" type="xs:float" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
