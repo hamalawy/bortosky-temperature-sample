@@ -12,6 +12,8 @@ Contract-first helps ensure interopability with other non .NET clients, for exam
 Note that the System.DateTime is serialized in a proper interopable manner by the ASP.NET web service framework but the ISO format was used for demonstration purposes.
 *Linq to XML* and a *generic collection* are used to read the requested temperatures from the XML file and return a composite response object to the calling program, in this case, the Service Layer.
 
+http://www.bortosky.com/samples/temperature/img/ServiceDataLayer.gif
+
 The NCDC seems to be returning temperatures of 9999.9 in certain circumstances, probably because of unreported data. 
 For purposes of demonstration, these temperatures are adjusted to the prior day's values.
 This adjustment is done at this lowest level Data Layer so downstream clients won't have to deal with the bad data.
