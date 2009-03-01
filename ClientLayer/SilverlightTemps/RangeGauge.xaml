@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="SilverlightTemps.RangeGauge"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <UserControl.Resources>
+        <Storyboard x:Name="ThumbTransition">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ThumbScale" Storyboard.TargetProperty="ScaleX">
+                <SplineDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <Border x:Name="GridBorder" Style="{StaticResource GaugeStyle}">
+        <Rectangle x:Name="ThumbRectangle" Style="{StaticResource GaugeThumbStyle}">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform x:Name="ThumbScale" />
+                    <TranslateTransform x:Name="ThumbTranslate" X="110"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+    </Border>
+</UserControl>
