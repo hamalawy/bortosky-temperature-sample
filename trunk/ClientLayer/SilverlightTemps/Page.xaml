@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="SilverlightTemps.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Temps="clr-namespace:SilverlightTemps"
+    xmlns:TempsConverters="clr-namespace:SilverlightTemps.ValueConverters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+  <UserControl.Resources>
+    <TempsConverters:LongDateConverter x:Name="longDateConverter" />
+    <TempsConverters:TemperatureTextConverter x:Name="temperatureTextConverter" />
+    <Storyboard x:Name="GrowTemps">
+      <DoubleAnimation Storyboard.TargetName="MaxScale" Storyboard.TargetProperty="ScaleX" From="0" To="1" Duration="0:0:0.2" />
+      <DoubleAnimation Storyboard.TargetName="MinScale" Storyboard.TargetProperty="ScaleX" From="0" To="1" Duration="0:0:0.2"/>
+      <DoubleAnimation Storyboard.TargetName="MaxScale" Storyboard.TargetProperty="ScaleY" From="0" To="1" Duration="0:0:0.2" />
+      <DoubleAnimation Storyboard.TargetName="MinScale" Storyboard.TargetProperty="ScaleY" From="0" To="1" Duration="0:0:0.2" />
+    </Storyboard>
+  </UserControl.Resources>
+  <StackPanel x:Name="LayoutRoot">
+    <Border x:Name="LoadingPanel" Height="200" Background="#FFF7F2F2">
+      <TextBlock FontFamily="Verdana" FontSize="48" VerticalAlignment="Center" Text="Loading..." TextWrapping="Wrap" HorizontalAlignment="Center"/>
+    </Border>
+    <StackPanel x:Name="MainPanel" Orientation="Vertical" Background="#FFAAA2A2">
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <TextBlock x:Name="MinTemp" Text="{Binding Converter={StaticResource temperatureTextConverter}, Path=MinTemperature}" Foreground="#FF515AF0" Style="{StaticResource TempText}" RenderTransformOrigin="0.5,0.5">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform x:Name="MinScale" ScaleX="0.5" ScaleY="0.5"/>
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="MaxTemp"  Text="{Binding Converter={StaticResource temperatureTextConverter}, Path=MaxTemperature}" Foreground="#FFBC0C44" Style="{StaticResource TempText}" RenderTransformOrigin="0.5,0.5">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform x:Name="MaxScale" ScaleX="0.5" ScaleY="0.5"/>
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+        </TextBlock>
+      </StackPanel>
+      <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" x:Name="DateNav" HorizontalAlignment="Center">
+          <Button Content="3" x:Name="PrevBtn" FontFamily="Webdings" FontSize="36" IsEnabled="False"/>
+          <TextBlock Text="{Binding Converter={StaticResource longDateConverter}, Path=SubjectDate}" Style="{StaticResource SelectedDayStyle}" x:Name="MyDay" />
+          <Button Content="4" x:Name="NextBtn" FontFamily="Webdings" FontSize="36" IsEnabled="False"/>
+        </StackPanel>
+        <Temps:RangeGauge x:Name="RangeGauge1" GaugeWidth="300" />
+      </StackPanel>
+    </StackPanel>
+  </StackPanel>
+</UserControl>
