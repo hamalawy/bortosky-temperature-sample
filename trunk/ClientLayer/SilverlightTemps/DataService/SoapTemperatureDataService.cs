@@ -8,18 +8,51 @@
 
 
 
-
+using System;
+using System.Linq;
+using SilverlightTemps;
 using SilverlightTemps.DataService;
-namespace SilverlightTemps.DataService {
-	public class SoapTemperatureDataService : TemperatureDataService {
+using SilverlightTemps.TemperatureServiceReference;
+using System.Collections.Generic;
+namespace SilverlightTemps.DataService
+{
+    public class SoapTemperatureDataService : TemperatureDataService
+    {
 
-		/// 
-		/// <param name="stationId"></param>
-		/// <param name="days"></param>
-		public override void GetRecentTemperaturesAsync(string stationId, int days){
+        /// 
+        /// <param name="stationId"></param>
+        /// <param name="days"></param>
+        public override void GetRecentTemperaturesAsync(string stationId, int days)
+        {
+            TemperatureServiceSoapClient c = new TemperatureServiceSoapClient();
+            c.GetTemperaturesByDayCompleted += new EventHandler<GetTemperaturesByDayCompletedEventArgs>(delegate(object sender, GetTemperaturesByDayCompletedEventArgs e)
+                {
+                    List<TemperatureDay> list = new List<TemperatureDay>(e.Result.Count);
+                    var q = from x in e.Result
+                            select new TemperatureDay()
+                            {
+                                SubjectDate = DateTime.Parse(x.RangeDate),
+                                MaxTemperature = x.Range.Maximum,
+                                MinTemperature = x.Range.Minimum
+                            };
+                    list.AddRange(q);
+                    OnGetRecentTemperaturesComplete(list);
+                });
+            c.GetAvailableDatesCompleted += new EventHandler<GetAvailableDatesCompletedEventArgs>(delegate(object sender, GetAvailableDatesCompletedEventArgs e)
+                {
+                    DateTime fd = DateTime.Parse(e.Result.AvailableDates.FirstDate).AddDays(e.Result.AvailableDates.DaysAvailable - days);
+                    c.GetTemperaturesByDayAsync(stationId, fd.Year, fd.Month, fd.Day, days);
+                });
+            try
+            {
+                c.GetAvailableDatesAsync(stationId);
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
 
-		}
-
-	}//end SoapTemperatureDataService
+    }//end SoapTemperatureDataService
 
 }//end namespace DataService
