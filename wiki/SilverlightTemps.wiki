@@ -1,6 +1,8 @@
 #summary General information on the SilverlightTemps sample
 #labels Phase-Design
 
+The working sample is available at http://www.bortosky.com/samples/temperature/silverlighttemps.htm.
+
 =Features=
 The Silverlight package of this sample project has these features
 
