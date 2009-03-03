@@ -37,7 +37,7 @@ namespace SilverlightTemps
 
         void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            DataService.TemperatureDataService ds = new DataService.MockTemperatureDataService();
+            DataService.TemperatureDataService ds = new DataService.SoapTemperatureDataService();
             ds.GetRecentTemperaturesComplete += new SilverlightTemps.DataService.TemperatureDataEventHandler(ds_GetRecentTemperaturesComplete);
             ds.GetRecentTemperaturesAsync("72434013994", 700);
         }
