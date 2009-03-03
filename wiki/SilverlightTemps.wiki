@@ -32,7 +32,7 @@ Resources and styles for the application.
 The main UserControl for the application
 
 ===Attributes===
-||TempDays||Private||List<TemperatureDay>||The collection of TemperatureDay objects for display|| 
+||TempDays||Private||List`<TemperatureDay>`||The collection of TemperatureDay objects for display|| 
 ||selectedDayIndex||Private||int||The index of the currently selected TemperatureDay|| 
 ||selectedDay||Private||TemperatureDay||Private backing member for the SelectedDayIndex property|| 
 
@@ -92,7 +92,7 @@ Returns data from a SOAP service proxy.
 An EventArgs implementation to return the retrieved data to the calling application.
 
 ===Attributes===
-||TemperatureDays||Public||List<TemperatureDay>||The generic list of TemperatureDays returned by the data layer and suitable for consumption by a calling application.|| 
+||TemperatureDays||Public||List`<TemperatureDay>`||The generic list of TemperatureDays returned by the data layer and suitable for consumption by a calling application.|| 
 
 ===Methods===
 ||TemperatureDataEventArgs||Public||||A generic collection of the returned data||  
