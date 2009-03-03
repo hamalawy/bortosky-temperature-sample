@@ -8,6 +8,7 @@
       <Setter Property="FontSize" Value="72"/>
       <Setter Property="FontFamily" Value="Verdana"/>
       <Setter Property="Padding" Value="30,0,30,0"/>
+      <Setter Property="FontWeight" Value="Bold"/>
     </Style>
     <Style x:Key="SelectedDayStyle" TargetType="TextBlock">
       <Setter Property="FontFamily" Value="Verdana"/>
@@ -30,5 +31,13 @@
       <Setter Property="Height" Value="15"/>
       <Setter Property="HorizontalAlignment" Value="Left"/>
     </Style>
+    <RadialGradientBrush x:Key="MinBrush">
+      <GradientStop Color="#FF2400FF" Offset="0.388"/>
+      <GradientStop Color="#FF24186E" Offset="0.888"/>
+    </RadialGradientBrush>
+    <RadialGradientBrush x:Key="MaxBrush">
+      <GradientStop Color="#FF7A3C3C" Offset="0.925"/>
+      <GradientStop Color="#FFFF0000" Offset="0.214"/>
+    </RadialGradientBrush>
   </Application.Resources>
 </Application>
