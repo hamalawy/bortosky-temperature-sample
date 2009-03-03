@@ -20,14 +20,14 @@
     </Border>
     <StackPanel x:Name="MainPanel" Orientation="Vertical" Background="#FFAAA2A2">
       <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-        <TextBlock x:Name="MinTemp" Text="{Binding Converter={StaticResource temperatureTextConverter}, Path=MinTemperature}" Foreground="#FF515AF0" Style="{StaticResource TempText}" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="MinTemp" Text="{Binding Converter={StaticResource temperatureTextConverter}, Path=MinTemperature}" Foreground="{StaticResource MinBrush}" Style="{StaticResource TempText}" RenderTransformOrigin="0.5,0.5">
           <TextBlock.RenderTransform>
             <TransformGroup>
               <ScaleTransform x:Name="MinScale" ScaleX="0.5" ScaleY="0.5"/>
             </TransformGroup>
           </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="MaxTemp"  Text="{Binding Converter={StaticResource temperatureTextConverter}, Path=MaxTemperature}" Foreground="#FFBC0C44" Style="{StaticResource TempText}" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="MaxTemp"  Text="{Binding Converter={StaticResource temperatureTextConverter}, Path=MaxTemperature}" Foreground="{StaticResource MaxBrush}" Style="{StaticResource TempText}" RenderTransformOrigin="0.5,0.5">
           <TextBlock.RenderTransform>
             <TransformGroup>
               <ScaleTransform x:Name="MaxScale" ScaleX="0.5" ScaleY="0.5"/>
