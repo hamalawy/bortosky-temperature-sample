@@ -16,6 +16,8 @@ using System.Xml.XPath;
 using System.IO;
 using System.Reflection;
 using Bortosky.Samples.RetailChain.Client.Data;
+using System.Resources;
+
 namespace Bortosky.Samples.RetailChain.Client.Data
 {
     public class XmlRetailerService : IRetailerService
@@ -23,10 +25,13 @@ namespace Bortosky.Samples.RetailChain.Client.Data
         protected XDocument doc;
         protected XNamespace ns = "uri:bortosky.com/retail";
         protected XNamespace wsns = "uri:bortosky.com/retail/mock";
+        //private ResourceManager rmgr;
 
         public XmlRetailerService()
         {
-            this.doc = XDocument.Load(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase), "stores.xml"));
+            StreamReader rdr = new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream("Bortosky.Samples.RetailChain.Client.Data.StoresResource.xml"));
+            this.doc = XDocument.Load(rdr);
+            rdr.Close();
         }
 
         public IEnumerable<Store> GetStores()
@@ -34,33 +39,6 @@ namespace Bortosky.Samples.RetailChain.Client.Data
             var query =
                 from item in this.doc.Descendants(ns + "STORE")
                 select GetStore(item);
-
-
-            //System.Random r = new System.Random();
-            //string[] weeks = new string[] { "2009-W20", "2009-W21", "2009-W22" };
-            //foreach (XElement n in doc.Root.Descendants(ns + "STORE"))
-            //{
-            //    XElement sex = new XElement(wsns + "SALES");
-            //    foreach (string week in weeks)
-            //    {
-            //        XElement wex = new XElement(wsns + "WEEK");
-            //        wex.Add(new XAttribute("ISO", week));
-            //        foreach (Brand b in this.brands)
-            //        {
-            //            XElement bex = new XElement(wsns + "SALE");
-            //            XElement bx = new XElement(wsns + "BRAND");
-            //            bx.Add(new XAttribute("ID", b.Id));
-            //            bex.Add(bx);
-            //            bex.Add(new XElement(wsns + "GROSS", r.Next(2000)));
-            //            wex.Add(bex);
-            //        }
-            //        sex.Add(wex);
-            //    }
-            //    n.Add(sex);
-            //}
-            //doc.Save(@"E:\stuff.xml");
-            
-            
             return query;
         }
 
@@ -107,7 +85,6 @@ namespace Bortosky.Samples.RetailChain.Client.Data
                 }
             };
         }
-
     }//end XmlRetailerService
 
 }//end namespace Data
