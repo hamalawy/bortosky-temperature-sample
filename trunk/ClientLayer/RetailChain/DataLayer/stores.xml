@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<STORES xmlns="uri:bortosky.com/retail">
+  <STORE ID="6449755">
+    <NAME>STORE #6449755</NAME>
+    <ADDRESS>
+      <STREET>60 HAMPTON VILLAGE</STREET>
+      <CITY>ST. LOUIS</CITY>
+      <STATE>MO</STATE>
+      <ZIP>63109</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.5911</LAT>
+      <LON>90.2925</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>314</AREA_CODE>
+    <PHONE>3535060</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1364</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>971</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1140</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>67</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>102</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>54</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1924</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1011</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1362</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1491</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1582</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1785</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>461</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>345</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1720</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="5743911">
+    <NAME>STORE #5743911</NAME>
+    <ADDRESS>
+      <STREET>7450 HAMPTON</STREET>
+      <CITY>ST. LOUIS</CITY>
+      <STATE>MO</STATE>
+      <ZIP>63109</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.5652</LAT>
+      <LON>90.2947</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>314</AREA_CODE>
+    <PHONE>8323440</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1206</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1005</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>569</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1467</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1597</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>75</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>357</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>28</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1024</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1530</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1148</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1148</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>505</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1613</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1106</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6783317">
+    <NAME>STORE #6783317</NAME>
+    <ADDRESS>
+      <STREET>1020 LOUGHBOROUGH</STREET>
+      <CITY>ST. LOUIS</CITY>
+      <STATE>MO</STATE>
+      <ZIP>63111</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.5579</LAT>
+      <LON>90.2613</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>314</AREA_CODE>
+    <PHONE>7525333</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>537</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>35</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>573</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>863</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>794</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1825</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>866</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>786</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1497</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>162</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>415</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1072</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>626</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>84</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1957</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6322856">
+    <NAME>STORE #6322856</NAME>
+    <ADDRESS>
+      <STREET>3431 UNION</STREET>
+      <CITY>ST. LOUIS</CITY>
+      <STATE>MO</STATE>
+      <ZIP>63115</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.6781</LAT>
+      <LON>90.2590</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>314</AREA_CODE>
+    <PHONE>3818789</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>685</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1294</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1132</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1707</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>739</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>869</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>154</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1892</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1888</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1953</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1007</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>942</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>115</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>536</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>953</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="68864719">
+    <NAME>STORE #68864719</NAME>
+    <ADDRESS>
+      <STREET>1750 BRADFORD LANE</STREET>
+      <CITY>NORMAL</CITY>
+      <STATE>IL</STATE>
+      <ZIP>61761</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>40.5370</LAT>
+      <LON>88.9862</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>309</AREA_CODE>
+    <PHONE>4517100</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>905</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1418</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1397</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>256</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>953</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1547</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1212</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1598</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1550</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1894</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>340</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>219</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1071</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1305</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1182</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6723519">
+    <NAME>STORE #6723519</NAME>
+    <ADDRESS>
+      <STREET>4171 LINDELL</STREET>
+      <CITY>ST. LOUIS</CITY>
+      <STATE>MO</STATE>
+      <ZIP>63108</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.6403</LAT>
+      <LON>90.2476</LON>
+    </GEO>
+    <ETHNIC>0200</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>314</AREA_CODE>
+    <PHONE>5338027</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1003</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1730</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1943</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1066</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>845</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1853</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>16</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>797</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>873</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>236</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>382</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>142</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>684</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>910</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1787</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6259686">
+    <NAME>STORE #6259686</NAME>
+    <ADDRESS>
+      <STREET>1400 FORUM BLVD.</STREET>
+      <CITY>COLUMBIA</CITY>
+      <STATE>MO</STATE>
+      <ZIP>65201</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.9506</LAT>
+      <LON>92.2046</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>573</AREA_CODE>
+    <PHONE>4462800</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>882</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>750</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>250</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>544</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1256</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>996</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1674</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>370</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1131</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>410</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1473</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1696</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1581</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1813</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>398</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="5962604">
+    <NAME>STORE #5962604</NAME>
+    <ADDRESS>
+      <STREET>858 MIDDLE RD</STREET>
+      <CITY>BETTENDORF</CITY>
+      <STATE>IA</STATE>
+      <ZIP>527224101</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>41.5638</LAT>
+      <LON>90.4656</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>563</AREA_CODE>
+    <PHONE>3557810</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>649</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1083</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>586</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>706</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>949</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1276</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>999</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1048</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1691</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1099</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>889</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>620</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>523</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>19</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>570</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6680060">
+    <NAME>STORE #6680060</NAME>
+    <ADDRESS>
+      <STREET>2712 Godfrey Rd</STREET>
+      <CITY>Godfrey</CITY>
+      <STATE>IL</STATE>
+      <ZIP>620356928</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.5500</LAT>
+      <LON>90.1100</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>618</AREA_CODE>
+    <PHONE>4667060</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1405</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>527</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>687</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1763</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1011</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1590</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1968</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>527</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>49</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>185</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1329</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1360</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>812</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>656</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1371</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6180360">
+    <NAME>STORE #6180360</NAME>
+    <ADDRESS>
+      <STREET>2073 WASHINGTON CROSSING</STREET>
+      <CITY>WASHINGTON</CITY>
+      <STATE>MO</STATE>
+      <ZIP>63090</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.5423</LAT>
+      <LON>91.0345</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>636</AREA_CODE>
+    <PHONE>2393577</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>157</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>435</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>984</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>474</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1586</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1299</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1555</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1977</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1960</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>510</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1883</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1701</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>558</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1444</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>366</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6794511">
+    <NAME>STORE #6794511</NAME>
+    <ADDRESS>
+      <STREET>4127 N. GRAND</STREET>
+      <CITY>ST. LOUIS</CITY>
+      <STATE>MO</STATE>
+      <ZIP>63107</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.6655</LAT>
+      <LON>90.2136</LON>
+    </GEO>
+    <ETHNIC>0200</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>314</AREA_CODE>
+    <PHONE>5311750</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>375</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1150</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>350</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>560</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1004</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>945</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1008</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1817</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>801</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>808</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>681</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>555</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>537</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>520</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1620</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6272251">
+    <NAME>STORE #6272251</NAME>
+    <ADDRESS>
+      <STREET>5055 ARSENAL</STREET>
+      <CITY>ST. LOUIS</CITY>
+      <STATE>MO</STATE>
+      <ZIP>63139</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.6055</LAT>
+      <LON>90.2744</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>314</AREA_CODE>
+    <PHONE>7715008</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1916</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>186</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>392</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>319</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>942</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>454</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1636</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>48</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>432</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1271</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1849</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>549</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>727</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1252</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1128</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6411249">
+    <NAME>STORE #6411249</NAME>
+    <ADDRESS>
+      <STREET>1701 E EMPIRE</STREET>
+      <CITY>BLOOMINGTON</CITY>
+      <STATE>IL</STATE>
+      <ZIP>61704</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>40.4675</LAT>
+      <LON>88.9848</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>309</AREA_CODE>
+    <PHONE>6629300</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1888</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1409</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1083</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1682</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1809</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>178</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1009</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>252</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1651</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>425</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1148</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>617</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>182</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1666</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>905</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6075926">
+    <NAME>STORE #6075926</NAME>
+    <ADDRESS>
+      <STREET>2811 Homer M Adams Pkwy</STREET>
+      <CITY>Alton</CITY>
+      <STATE>IL</STATE>
+      <ZIP>620024856</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.5500</LAT>
+      <LON>90.0900</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>618</AREA_CODE>
+    <PHONE>4656673</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>743</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1017</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1457</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>339</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>593</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1696</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1309</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>239</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>501</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1912</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>739</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1101</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>1917</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1288</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1155</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6102590">
+    <NAME>STORE #6102590</NAME>
+    <ADDRESS>
+      <STREET>1801 MISSOURI BLVD</STREET>
+      <CITY>JEFFERSON CITY</CITY>
+      <STATE>MO</STATE>
+      <ZIP>65101</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.5084</LAT>
+      <LON>92.1165</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>573</AREA_CODE>
+    <PHONE>6354666</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>396</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>281</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>564</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1673</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>920</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1271</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1472</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>855</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>711</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1442</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>906</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1934</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>740</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1894</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1794</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="6824123">
+    <NAME>STORE #6824123</NAME>
+    <ADDRESS>
+      <STREET>1501 CRESTON PARK DR</STREET>
+      <CITY>JANESVILLE</CITY>
+      <STATE>WI</STATE>
+      <ZIP>53545</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>42.7101</LAT>
+      <LON>89.0032</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>608</AREA_CODE>
+    <PHONE>7555815</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1837</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1453</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>382</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1526</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>527</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>831</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1092</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>388</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>659</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1431</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>579</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1170</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>581</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>1770</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1070</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+  <STORE ID="5872503">
+    <NAME>STORE #5872503</NAME>
+    <ADDRESS>
+      <STREET>3430 S. GRAND</STREET>
+      <CITY>ST. LOUIS</CITY>
+      <STATE>MO</STATE>
+      <ZIP>63118</ZIP>
+    </ADDRESS>
+    <GEO>
+      <LAT>38.5949</LAT>
+      <LON>90.2435</LON>
+    </GEO>
+    <ETHNIC>0100</ETHNIC>
+    <CLASS>2101</CLASS>
+    <AREA_CODE>314</AREA_CODE>
+    <PHONE>7725500</PHONE>
+    <SALES xmlns="uri:bortosky.com/retail/mock">
+      <WEEK ISO="2009-W20">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1076</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>1092</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>963</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>496</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>29</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W21">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>867</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>52</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>508</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>746</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1634</GROSS>
+        </SALE>
+      </WEEK>
+      <WEEK ISO="2009-W22">
+        <SALE>
+          <BRAND ID="A" />
+          <GROSS>1271</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="B" />
+          <GROSS>162</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="C" />
+          <GROSS>745</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="D" />
+          <GROSS>896</GROSS>
+        </SALE>
+        <SALE>
+          <BRAND ID="E" />
+          <GROSS>1687</GROSS>
+        </SALE>
+      </WEEK>
+    </SALES>
+  </STORE>
+</STORES>
