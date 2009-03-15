@@ -8,7 +8,7 @@
     <ProjectGuid>{ECC5020B-CEF0-4B95-8D22-6582662FE03F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RetailChainClient</RootNamespace>
+    <RootNamespace>Bortosky.Samples.RetailChain.Client</RootNamespace>
     <AssemblyName>RetailChainClient</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -60,6 +60,9 @@
     <Compile Include="Data\WeeklySale.cs" />
     <Compile Include="Data\XmlRetailerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\StoresResource.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
