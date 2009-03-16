@@ -7,15 +7,19 @@
 ///////////////////////////////////////////////////////////
 
 
-
-
+using System.ServiceModel;
+using System.Runtime.Serialization;
 using Bortosky.Samples.RetailChain.Client.Data;
 namespace Bortosky.Samples.RetailChain.Client.Data
 {
+    [DataContract]
     public class Store
     {
+        [DataMember]
         public string Id { get; set; }
+        [DataMember]
         public string Name { get; set; }
+        [DataMember]
         public Location Location { get; set; }
     }//end Store
 

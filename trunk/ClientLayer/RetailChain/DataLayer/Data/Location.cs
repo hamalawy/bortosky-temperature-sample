@@ -8,16 +8,24 @@
 
 
 
-
+using System.ServiceModel;
+using System.Runtime.Serialization;
 namespace Bortosky.Samples.RetailChain.Client.Data
 {
+    [DataContract]
     public class Location
     {
+        [DataMember]
         public string Street { get; set; }
+        [DataMember]
         public string City { get; set; }
+        [DataMember]
         public string State { get; set; }
+        [DataMember]
         public string ZIP { get; set; }
+        [DataMember]
         public float Longitude { get; set; }
+        [DataMember]
         public float Latitude { get; set; }
 
     }//end Location
