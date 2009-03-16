@@ -8,15 +8,21 @@
 
 
 
-
+using System.ServiceModel;
+using System.Runtime.Serialization;
 using Bortosky.Samples.RetailChain.Client.Data;
 namespace Bortosky.Samples.RetailChain.Client.Data
 {
+    [DataContract]
     public class WeeklySale
     {
+        [DataMember]
         public string ISOWeek { get; set; }
+        [DataMember]
         public float GrossAmount { get; set; }
+        [DataMember]
         public Brand Brand { get; set; }
+        [DataMember]
         public Store Store { get; set; }
 
     }//end WeeklySale

@@ -8,12 +8,18 @@
 
 
 
-
-namespace Bortosky.Samples.RetailChain.Client.Data {
+using System.ServiceModel;
+using System.Runtime.Serialization;
+namespace Bortosky.Samples.RetailChain.Client.Data
+{
+    [DataContract]
     public class Brand
     {
+        [DataMember]
         public string Id { get; set; }
+        [DataMember]
         public string Name { get; set; }
+        [DataMember]
         public string Color { get; set; }
 
     }//end Brand
