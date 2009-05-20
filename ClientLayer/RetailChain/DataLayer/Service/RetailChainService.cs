@@ -16,11 +16,11 @@ namespace Bortosky.Samples.RetailChain.Client.Service
 {
     [ServiceContract(Namespace = "Bortosky.Samples.RetailChain.Client.Service")]
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class RetailChainService
+    public class WCFRetailChainService
     {
         IRetailerService retailerSvc;
 
-        public RetailChainService()
+        public WCFRetailChainService()
         {
             this.retailerSvc = new XmlRetailerService();
         }
